@@ -1576,14 +1576,45 @@ aside ::-webkit-scrollbar-thumb,
 
 /*////////////////////////////////////*/
 /* Block Search plugin */
-.block-search input {
+.block-search-input {
+    position: relative;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.block-search-input input {
     margin: 0;
     width: 100%;
 }
 
-.block-search input:focus {
+.block-search-input input:focus {
     box-shadow: none;
     margin: 0;
+}
+
+.block-search-input .clear-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*width: 0;*/
+    /*overflow-x: hidden;*/
+}
+
+.block-search-input .clear-search span {
+    font-size: 16px;
+    display: block;
+    padding: 6px 15px;
+}
+
+.block-search-input .clear-search span:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.block-search-input .pull-down {
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #eee;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
