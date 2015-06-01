@@ -82,6 +82,9 @@ padding-top: 15px;
 margin-bottom: -10px;
 }
 
+.section-footer {
+	background: #930c0a;
+}
 
 @media print {
 
