@@ -121,6 +121,10 @@ h2.site-name {
 	padding-top: 10px;
 }
 
+.site-name-slogan a {
+	font-weight: bold;
+}
+
 
 /*////////////////////////////////////*/
 /* Views */
@@ -135,7 +139,9 @@ h2.site-name {
 
 /*////////////////////////////////////*/
 /* Main menu mobile */
-
+nav.navigation .main-menu {
+	font-weight: bold;
+}
 
 
 /*////////////////////////////////////*/
