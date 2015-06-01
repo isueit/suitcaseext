@@ -3,6 +3,9 @@
 /* GLOBAL STYLING */
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
+section h1 {
+    color: #930c0a !important;
+}
 
 h2.block-title {
 padding-left: 7px;
@@ -100,6 +103,9 @@ input[type="text"] {
     height: 2em !important;
 }
 
+a, a:link, a:visited {
+    color: #930c0a !important;
+}
 
 /*////////////////////////////////////*/
 /* Site Name/Slogan */
