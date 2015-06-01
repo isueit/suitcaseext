@@ -103,7 +103,9 @@ input[type="text"] {
 
 /*////////////////////////////////////*/
 /* Site Name/Slogan */
-
+.nameplate img {
+	height: 60px !important;
+}
 
 
 /*////////////////////////////////////*/
