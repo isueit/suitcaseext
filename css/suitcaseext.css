@@ -93,7 +93,9 @@ margin-bottom: -10px;
 /*////////////////////////////////////*/
 /* Dark Ribbon */
 
-
+input[type="text"] {
+    height: 2em !important;
+}
 
 
 /*////////////////////////////////////*/
@@ -132,6 +134,10 @@ margin-bottom: -10px;
 /*////////////////////////////////////*/
 /* Search Form */
 
+.page-search .search-form input#edit-submit,
+.page form#search-block-form .form-actions input.form-submit {
+	height: 2.8em !important;
+}
 
 
 /*////////////////////////////////////*/
