@@ -92,6 +92,9 @@ margin-bottom: -10px;
 
 /*////////////////////////////////////*/
 /* Dark Ribbon */
+.isu-dark-ribbon .wd-ribbon-menu {
+	float: right;
+}
 
 input[type="text"] {
     height: 2em !important;
