@@ -115,6 +115,10 @@ h2.site-name {
 	font-weight: bold;
 }
 
+.site-name a:hover {
+	text-decoration: none;
+}
+
 /*////////////////////////////////////*/
 /* Main menu mobile */
 nav.navigation .main-menu {
