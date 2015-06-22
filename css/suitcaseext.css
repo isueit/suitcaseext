@@ -90,6 +90,10 @@ margin-bottom: -10px;
 	background: #930c0a;
 }
 
+nav.navigation .main-menu>li a {
+	text-decoration: none;
+}
+
 /*////////////////////////////////////*/
 /* Dark Ribbon */
 .isu-dark-ribbon .wd-ribbon-menu {
@@ -117,6 +121,7 @@ h2.site-name {
 
 .site-name a:hover {
 	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*////////////////////////////////////*/
