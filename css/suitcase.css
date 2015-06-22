@@ -1053,6 +1053,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .item-list ul li.leaf {
     list-style-image: none;
     list-style-type: none;
+    padding-left: 1.7em;
 }
 
 .item-list > ul > li {
