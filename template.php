@@ -18,9 +18,6 @@ function suitcaseext_preprocess_html(&$vars) {
   $vars['attributes_array']['class'][] = 'wd-show-sidebar';
   // Drupal 7 in hook_preprocess_html()
   drupal_add_http_header('X-UA-Compatible', 'IE=edge,chrome=1');
-    // Add suitcase.css to theme
-  drupal_add_css(path_to_theme() . '/css/suitcase.css',
-  array('group' => CSS_THEME));
 }
 
 // template_preprocess_region
