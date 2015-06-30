@@ -223,6 +223,10 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
     list-style-type: square;
 }
 
+tr:hover td {
+    background-color: transparent;
+}
+
 @media print {
     a {
         color: blue;
@@ -728,7 +732,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 #zone-side-menu-wrapper .content>ul>li>ul>li>ul>li a {
-    padding-left: 0.7em;
+    padding-left: 1.7em;
 }
 
 #zone-side-menu-wrapper .content>ul>li>ul>li>ul>li>a {
@@ -859,8 +863,8 @@ nav.navigation .secondary-menu>li a.active-trail {
 .zone-content aside .block li.leaf,
 .zone-content aside .block li.expanded,
 .zone-content aside .block li.collapsed,
-.zone-content aside .block .item-list > ul > li,
-.zone-content aside .block .item-list > ul {
+.zone-content aside .block .item-list > ul:not(.pager) > li,
+.zone-content aside .block .item-list > ul:not(.pager) {
     /*display: block !important;*/
     margin: 0;
     padding: 0;
@@ -871,7 +875,9 @@ nav.navigation .secondary-menu>li a.active-trail {
 .zone-content aside .block li.expanded > a,
 .zone-content aside .block li.collapsed > a,
 .zone-content aside .block .item-list > ul > li > a {
-    padding: 12px;
+    padding: 10px;
+    padding-right: 20px;
+    position: relative;
 }
 
 .zone-content aside .block li.leaf > a:active,
@@ -898,7 +904,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     margin-top: 4px;
     filter: alpha(opacity=30);
     position: absolute;
-    right: 12px;
+    right: 10px;
+    top: calc(50% - 12px);
 }
 
 .zone-content aside .block li.collapsed > a:after {
@@ -950,7 +957,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 }
 
 .zone-content aside .block ul:not(.tabs):not(.biblio-export-buttons) li > a,
-.zone-content .block .content > p a {
+.zone-content aside .block .content > p a {
     display: block;
 }
 
@@ -1000,6 +1007,11 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 /*////////////////////////////////////*/
 /* Fields */
+.field:not(:last-child),
+.node-biblio .content>div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .field.field-name-body {
     overflow: hidden;
 }
@@ -1011,7 +1023,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 
 .field.field-name-field-tags,
 .field.field-name-field-category {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 .field.field-name-field-tags .field-item,
@@ -1045,7 +1057,8 @@ nav.navigation .secondary-menu>li a.active-trail {
     color: #336599;
 }
 
-.field .field-label {
+.field .field-label,
+.node-biblio .content h3 {
     color: #444;
 }
 /*////////////////////////////////////*/
@@ -1053,6 +1066,7 @@ nav.navigation .secondary-menu>li a.active-trail {
 .item-list ul li.leaf {
     list-style-image: none;
     list-style-type: none;
+    padding-left: 1.7em;
 }
 
 .item-list > ul > li {
@@ -1498,6 +1512,10 @@ html.js input.form-autocomplete {
 .pager li.pager-next > a:hover,
 .pager li.pager-last > a:hover {
     background: rgba(255,255,255,0.5);
+}
+
+.node-biblio .content>div h3 {
+    margin-bottom: 0;
 }
 
 /*////////////////////////////////////*/
