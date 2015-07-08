@@ -114,13 +114,10 @@ input[type="text"] {
 	height: 60px !important;
 }
 
-h1.site-name {
-	font-size: 1.6em;
-}
-
 h1.site-name,
 h2.site-name {
 	padding-top: 10px;
+	font-size: 1.6em;
 }
 
 .site-name-slogan a {
