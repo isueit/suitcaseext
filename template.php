@@ -24,10 +24,9 @@ function suitcaseext_preprocess_html(&$vars) {
 function suitcaseext_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
   if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
-=======
+
 function suitcase_preprocess_region(&$vars) {
   if($vars['region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
->>>>>>> upstream/master
     $node = node_load(arg(1));
     if($node->type == 'people' && !empty($node->field_people_category)) {
       $vars['categories'] = array();
