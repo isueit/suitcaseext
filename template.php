@@ -21,7 +21,6 @@ function suitcaseext_preprocess_html(&$vars) {
 }
 
 // template_preprocess_region
-<<<<<<< HEAD
 function suitcaseext_preprocess_region(&$vars) {
   $vars['dept_url'] = variable_get('dept_url', $default = NULL);
   if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
