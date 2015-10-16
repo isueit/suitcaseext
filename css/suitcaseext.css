@@ -149,6 +149,12 @@ nav.navigation .main-menu {
 .page-search .search-form input#edit-submit,
 .page form#search-block-form .form-actions input.form-submit {
 	height: 2.8em !important;
+	border: 2px solid #CB1A2A !important;
+}
+
+.page-search input#edit-keys,
+.page form#search-block-form .form-item-search-block-form input.form-text {
+    border: 2px solid #CB1A2A;
 }
 
 
