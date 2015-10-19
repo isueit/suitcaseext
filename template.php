@@ -12,19 +12,14 @@
  */
 
 // theme_preprocess_html
-function suitcaseext_preprocess_html(&$vars) {
+function suitcase_preprocess_html(&$vars) {
 //  ISU Bar responsive classes added to body
   $vars['attributes_array']['class'][] = 'responsive';
   $vars['attributes_array']['class'][] = 'wd-show-sidebar';
   // Drupal 7 in hook_preprocess_html()
   drupal_add_http_header('X-UA-Compatible', 'IE=edge,chrome=1');
 }
-
 // template_preprocess_region
-function suitcaseext_preprocess_region(&$vars) {
-  $vars['dept_url'] = variable_get('dept_url', $default = NULL);
-  if($vars['elements']['#region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
-
 function suitcase_preprocess_region(&$vars) {
   if($vars['region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
     $node = node_load(arg(1));
@@ -44,18 +39,15 @@ function suitcase_preprocess_region(&$vars) {
       $logo_url = file_create_url($logo['uri']);
       $vars['suitcase_config_logo'] = '<div class="logo-img"><a href="' . $GLOBALS['base_url'] . '" rel="home" title="' . $vars['site_name'] . '" class="active"><img src="' . $logo_url . '" alt="Go to ' . $vars['site_name'] . ' home" id="logo" /></a></div>';
     }
-
     $vars['dept_url'] = variable_get('dept_url', $default = NULL);
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
   }
 }
-
 function suitcase_preprocess_section(&$vars) {
   if($vars['section'] == 'header') {
     $vars['show_blackbar'] = variable_get('suitcase_config_blackbar_display', 1);
   }
 }
-
-function suitcaseext_preprocess_content(&$vars) {
+function suitcase_preprocess_content(&$vars) {
   $vars['categories'] = variable_get('field_people_category', $default = NULL);
 }
