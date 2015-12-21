@@ -128,6 +128,9 @@ h2.site-name {
 	text-decoration: none;
 }
 
+.site-name {
+	letter-spacing: 1px !important;
+}
 
 /*////////////////////////////////////*/
 /* Side menu */
