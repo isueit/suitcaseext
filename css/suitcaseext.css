@@ -102,6 +102,21 @@ a.active-trail {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
+.field.field-name-field-tags .field-item a, .field.field-name-field-category .field-item a {
+	border: 0px solid #e2e2e2;
+	color: #900;
+}
+
+.field.field-name-field-tags .field-item a:hover,
+.field.field-name-field-category .field-item a:hover  {
+	background-color: #fdfcfa;
+	text-decoration: underline;
+}
+
+.field-item.odd, .field-item.even {
+	margin-right: 0em;
+}
+
 /*////////////////////////////////////*/
 /* Dark Ribbon */
 .isu-dark-ribbon .wd-ribbon-menu {
