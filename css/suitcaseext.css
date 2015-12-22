@@ -98,8 +98,9 @@ nav.navigation .main-menu>li a {
 	text-decoration: none;
 }
 
-a.active-trail {
-	background-color: rgba(0, 0, 0, 0.1);
+nav.navigation .main-menu>li a:hover,
+nav.navigation .main-menu>li a.active-trail {
+	background-color: transparent;
 }
 
 .field.field-name-field-tags .field-item a, .field.field-name-field-category .field-item a {
