@@ -181,6 +181,14 @@ nav.navigation .main-menu {
 ;
 }
 
+.zone-content aside .block li.expanded > .item-list > ul > li > a {
+	text-indent: 0px;
+}
+
+.item-list {
+	text-indent: 20px;
+}
+
 
 /*////////////////////////////////////*/
 /* A Tag Mobile Styling */
