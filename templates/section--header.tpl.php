@@ -10,6 +10,15 @@
               </ul>
               <div class="wd-ribbon-menu-stack">
                 
+<?php
+global $base_url;
+$menuPath = DRUPAL_ROOT . "/local/menu.htm";
+
+if (file_exists($menuPath)) {
+  include $menuPath;
+}
+ else { ?>
+
                     <ul class="wd-ribbon-menu">
                       <li class="first"><a href="http://www.iastate.edu/">ISU</a></li>
                       <li><a href="http://www.extension.iastate.edu/articles">News</a></li>
@@ -19,6 +28,8 @@
                       <li><a href="http://www.extension.iastate.edu/content/contact-us">Contact Us</a></li>
                       <li class="last"><a href="http://www.extension.iastate.edu/content/county-offices">Offices</a></li>
                     </ul>
+<?php } ?>
+
               </div>
             </div>
           </div>
