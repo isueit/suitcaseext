@@ -15,6 +15,12 @@ $jsURL = $base_url . "/local/javascript.js";
 if (file_exists($jsPath)) {
   print "<script type=\"text/javascript\" src=\"" . $jsURL . "\"></script>\n";
 }
+
+$cssPath = DRUPAL_ROOT . "/local/styles.css";
+$cssURL = $base_url . "/local/styles.css";
+if (file_exists($cssPath)) {
+  print "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"" . $cssURL . "\" />\n";
+}
 ?>
 </head>
 <body<?php print $attributes;?>>
