@@ -7,6 +7,15 @@
   <?php print $scripts; ?>
 <!--  [if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--  <script >/* html5shiv */ (function(){var t='abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video'.split(' ');for(var i=t.length;i--;)document.createElement(t[i])})();</script>-->
+
+<?php
+global $base_url;
+$jsPath = DRUPAL_ROOT . "/local/javascript.js";
+$jsURL = $base_url . "/local/javascript.js";
+if (file_exists($jsPath)) {
+  print "<script type=\"text/javascript\" src=\"" . $jsURL . "\"></script>\n";
+}
+?>
 </head>
 <body<?php print $attributes;?>>
   <div class="outer-wrapper">
