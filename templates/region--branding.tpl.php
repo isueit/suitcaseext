@@ -3,6 +3,13 @@
   <?php if ($linked_logo_img || $site_name || $site_slogan): ?>
     <div class="branding-data clearfix">
 
+<?php
+$logoPath = DRUPAL_ROOT . "/local/logo.htm";
+
+if (file_exists($logoPath)) {
+  include $logoPath;
+} else { ?>
+
       <div id="isu_wordmark">
         <a accesskey="1" class="nameplate" href="http://www.extension.iastate.edu" title="Iowa State University Extension and Outreach Homepage"><img src="<?php print base_path(); ?>sites/all/themes/suitcaseext/images/sprite.png" alt="Iowa State University"></a></div>
       <?php if ($site_name || $site_slogan): ?>
@@ -19,6 +26,7 @@
           <?php endif; ?>
         </hgroup>
       <?php endif; ?>
+<?php } ?>
     </div>
   <?php endif; ?>
   <?php print $content; ?>
