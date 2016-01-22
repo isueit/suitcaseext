@@ -21,6 +21,12 @@ $cssURL = $base_url . "/local/styles.css";
 if (file_exists($cssPath)) {
   print "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"" . $cssURL . "\" />\n";
 }
+
+$printPath = DRUPAL_ROOT . "/local/print.css";
+$printURL = $base_url . "/local/print.css";
+if (file_exists($printPath)) {
+  print "<link type=\"text/css\" rel=\"stylesheet\" media=\"print\" href=\"" . $printURL . "\" />\n";
+}
 ?>
 </head>
 <body<?php print $attributes;?>>
