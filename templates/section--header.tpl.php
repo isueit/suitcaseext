@@ -19,7 +19,6 @@
                       <li><a href="http://www.extension.iastate.edu/content/contact-us">Contact Us</a></li>
                       <li class="last"><a href="http://www.extension.iastate.edu/content/county-offices">Offices</a></li>
                     </ul>
-                </ul>
               </div>
             </div>
           </div>
