@@ -9,10 +9,12 @@
 <!--  <script >/* html5shiv */ (function(){var t='abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video'.split(' ');for(var i=t.length;i--;)document.createElement(t[i])})();</script>-->
 </head>
 <body<?php print $attributes;?>>
+  <div class="outer-wrapper">
 	<!--[if lt IE 9]><div class="iecomp"><![endif]-->
   		<?php print $page_top; ?>
   		<?php print $page; ?>
   		<?php print $page_bottom; ?>
 	<!--[if lt IE 9]></div><![endif]-->
+  </div>
 </body>
 </html>
