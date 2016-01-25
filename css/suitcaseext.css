@@ -191,24 +191,6 @@ nav.navigation .main-menu {
 	padding-left: 1.7em;
 }
 
-/*///////MyExtension Changes//////*/
-/* Favorites Flag */
-.flag-bookmarks {
-	float: right;
-}
-.flag-bookmarks a:link {
-	color: #0062a0;
-}
-.flag-bookmarks a:visited {
-	color: #0062a0;
-}
-/*////////////////////////////////////*/
-/* Event Content */
-.date-display-single {
-	padding: 50px;
-}
-/*////////////////////////////////////*/
-
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /* GLOBAL STYLING END */
