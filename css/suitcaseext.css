@@ -229,3 +229,9 @@ nav.navigation .main-menu {
 		display: block;
 	}
 }      
+
+/* Hamburger Menu Text */
+.hamburger-menu-text {
+	color:white;
+	font-size:0.55em;
+}

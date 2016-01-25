@@ -28,6 +28,19 @@ if (file_exists($printPath)) {
   print "<link type=\"text/css\" rel=\"stylesheet\" media=\"print\" href=\"" . $printURL . "\" />\n";
 }
 ?>
+
+<script type=text/javascript>
+// Function to add the word menu to the hamberger menu charactor
+(function($) {
+  $(document).ready(function() {
+    $origHtml = $("ul#main-menu >li.first > a").html();
+    if ($origHtml == "≡") {
+      $("ul#main-menu >li:first > a").html($origHtml + " <span class=\"hamburger-menu-text\">menu</span>");
+    }
+  });
+})(jQuery);
+</script>
+
 </head>
 <body<?php print $attributes;?>>
   <div class="outer-wrapper">
