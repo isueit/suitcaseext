@@ -12,7 +12,7 @@
  */
 
 // theme_preprocess_html
-function suitcase_preprocess_html(&$vars) {
+function suitcaseext_preprocess_html(&$vars) {
 //  ISU Bar responsive classes added to body
   $vars['attributes_array']['class'][] = 'responsive';
   $vars['attributes_array']['class'][] = 'wd-show-sidebar';
@@ -20,7 +20,7 @@ function suitcase_preprocess_html(&$vars) {
   drupal_add_http_header('X-UA-Compatible', 'IE=edge,chrome=1');
 }
 // template_preprocess_region
-function suitcase_preprocess_region(&$vars) {
+function suitcaseext_preprocess_region(&$vars) {
   if($vars['region'] == 'content' && arg(0) == 'node' && is_numeric(arg(1)) && arg(2) !== 'edit') {
     $node = node_load(arg(1));
     if($node->type == 'people' && !empty($node->field_people_category)) {
@@ -43,11 +43,11 @@ function suitcase_preprocess_region(&$vars) {
     $vars['show_isu_nameplate'] = variable_get('suitcase_config_isu_nameplate_display', 1);
   }
 }
-function suitcase_preprocess_section(&$vars) {
+function suitcaseext_preprocess_section(&$vars) {
   if($vars['section'] == 'header') {
     $vars['show_blackbar'] = variable_get('suitcase_config_blackbar_display', 1);
   }
 }
-function suitcase_preprocess_content(&$vars) {
+function suitcaseext_preprocess_content(&$vars) {
   $vars['categories'] = variable_get('field_people_category', $default = NULL);
 }
