@@ -113,6 +113,10 @@ nav.navigation .main-menu>li a {
 	margin-right: 0em;
 }
 
+input[type="submit"] {
+	height: 2.25em;
+}
+
 /*////////////////////////////////////*/
 /* Dark Ribbon */
 .isu-dark-ribbon .wd-ribbon-menu {
