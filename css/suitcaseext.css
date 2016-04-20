@@ -213,3 +213,11 @@ nav.navigation .main-menu {
 	color:white;
 	font-size:0.55em;
 }
+
+/* Comma added between Categories Tags */
+.field-item a li:after {
+content:”, “;
+}
+.field-item a li:last-child:after {
+content: ”“;
+}
