@@ -182,7 +182,8 @@ nav.navigation .main-menu {
 }
 
 .zone-content aside .block li.expanded > .item-list > ul > li > a {
-	text-indent: 0px;
+	text-indent: none;
+	color: #333;
 }
 
 
@@ -221,3 +222,9 @@ content:”, “;
 .field-item a li:last-child:after {
 content: ”“;
 }
+
+/* Indent parent level categories, color change for child */
+.item-list {
+	text-indent: none;
+}
+
