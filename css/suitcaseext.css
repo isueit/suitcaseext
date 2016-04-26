@@ -216,10 +216,10 @@ nav.navigation .main-menu {
 }
 
 /* Comma added between Categories Tags */
-.field-item a li:after {
+.field.field-name-field-tags .field-item a, .field.field-name-field-category .field-item a li:after {
 content:”, “;
 }
-.field-item a li:last-child:after {
+.field.field-name-field-tags .field-item a, .field.field-name-field-category .field-item a li:last-child:after {
 content: ”“;
 }
 
@@ -228,3 +228,7 @@ content: ”“;
 	text-indent: none;
 }
 
+/* Mobile navigation menu added */
+nav.navigation li.main-menu-dropdown-item.hide { 
+	display: initial;
+}
