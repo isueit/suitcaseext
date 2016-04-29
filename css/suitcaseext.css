@@ -29,7 +29,11 @@ padding-top: 15px;
 padding-bottom: 15px;
 }
 
-.field-type-taxonomy-term-reference .field-items {
+.field-name-field-category .field-items {
+margin-top: -5px;
+}
+
+.field-name-field-tags .field-items {
 margin-top: -5px;
 }
 
