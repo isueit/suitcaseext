@@ -219,14 +219,6 @@ nav.navigation .main-menu {
 	font-size:0.55em;
 }
 
-/* Comma added between Categories Tags */
-.field.field-name-field-tags .field-item a, .field.field-name-field-category .field-item a li:after {
-content:”, “;
-}
-.field.field-name-field-tags .field-item a, .field.field-name-field-category .field-item a li:last-child:after {
-content: ”“;
-}
-
 /* Indent parent level categories, color change for child */
 .item-list {
 	text-indent: none;
