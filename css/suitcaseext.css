@@ -182,7 +182,7 @@ nav.navigation .main-menu {
 .page-search input#edit-keys,
 .page form#search-block-form .form-item-search-block-form input.form-text {
     border: 2px solid #CB1A2A;
-    max-width: 91%;	
+    max-width: 100%;	
 }
 
 .zone-content aside .block li.expanded > .item-list > ul > li > a {
