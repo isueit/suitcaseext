@@ -229,3 +229,9 @@ nav.navigation .main-menu {
 nav.navigation li.main-menu-dropdown-item.hide { 
 	display: initial;
 }
+
+/* Announcement banner styling to provided alignment */
+.view-luggage-announcements .flexslider .slides {
+	width: 102%;
+	margin-left: -10px;
+}
