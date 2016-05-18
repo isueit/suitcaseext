@@ -106,6 +106,8 @@ nav.navigation .main-menu>li a {
 	border: 0px solid #e2e2e2;
 	color: #900;
 	background-color: transparent;
+	padding: none;
+	padding-top: 5px;
 }
 
 .field.field-name-field-tags .field-item a:hover,
@@ -230,7 +232,7 @@ nav.navigation li.main-menu-dropdown-item.hide {
 	display: initial;
 }
 
-/* Announcement banner styling to provided alignment */
+/* Announcement banner styling to provide.fie alignment */
 .view-luggage-announcements .flexslider .slides {
 	width: 102%;
 	margin-left: -10px;
