@@ -106,8 +106,7 @@ nav.navigation .main-menu>li a {
 	border: 0px solid #e2e2e2;
 	color: #900;
 	background-color: transparent;
-	padding: none;
-	padding-top: 5px;
+	padding-top: 5px !important;
 }
 
 .field.field-name-field-tags .field-item a:hover,
